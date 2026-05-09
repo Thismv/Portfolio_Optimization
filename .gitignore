@@ -1,3 +1,7 @@
 /.DS_Store
-/Project 2.docx
+
+# Course handout — local only; do not commit
+Project 2.docx
+~$*.docx
+
 .venv/

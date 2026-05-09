@@ -82,7 +82,7 @@ Six portfolio strategies are constructed and evaluated for each fund universe:
 | Long-Short GMV | Global minimum variance, short selling allowed |
 | Long-Short MVP | Maximum Sharpe ratio, short selling allowed |
 | TE-Constrained MVP | Maximum Sharpe ratio, annual tracking error ≤ 5% vs equal-weighted benchmark |
-| Factor-Neutral MVP | Minimum variance portfolio with all six factor exposures constrained to zero, weight limit ±200% |
+| Factor-Neutral MVP | Maximum Sharpe ratio portfolio with all six factor exposures constrained to zero, weight limit ±200% per asset |
 
 All optimization inputs (mean returns, covariance matrix, factor betas) are estimated 
 from the in-sample period (January 2010 to December 2019). Portfolios are then evaluated 
