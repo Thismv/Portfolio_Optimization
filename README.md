@@ -48,7 +48,7 @@ significant positive alpha (t > 2) are flagged.
 
 ### Key findings
 
-**Mutual funds** (sample: 2001–2024): Four of ten funds generated significant positive 
+Mutual funds (sample: 2001–2024): Four of ten funds generated significant positive 
 alpha — FSELX (semiconductors), INPIX (leveraged internet), SLMCX (communications), 
 and NASDX (Nasdaq-100). All four are concentrated technology and internet-sector funds 
 that benefited from the prolonged tech-driven bull market. Their outperformance reflects 
@@ -56,12 +56,12 @@ sector concentration rather than broad stock-picking skill. The remaining six fu
 produced alphas statistically indistinguishable from zero, consistent with market 
 efficiency in diversified active management.
 
-**Smart beta ETFs** (sample: 2010–2024): Zero funds with significant positive alpha. 
+Smart beta ETFs (sample: 2010–2024): Zero funds with significant positive alpha. 
 R² values range from 0.83 to 0.97, confirming that the six-factor model fully explains 
 smart beta returns. These funds are transparent factor portfolios by construction — 
 no residual skill component is expected or found.
 
-**Hedge fund indices** (sample: 1991–2024): Eight of ten indices generated significant 
+Hedge fund indices (sample: 1991–2024): Eight of ten indices generated significant 
 positive alpha, with the strongest results in Distressed Securities (t = 6.17), 
 Merger Arbitrage (t = 5.64), and Equity Hedge (t = 4.84). Low market betas 
 (ranging from 0.09 to 0.57) confirm effective reduction of systematic market exposure. 
@@ -91,22 +91,22 @@ All reported statistics are annualized.
 
 ### Key findings
 
-**In-sample**, unconstrained long-short portfolios achieved the highest Sharpe ratios 
+In-sample, unconstrained long-short portfolios achieved the highest Sharpe ratios 
 across all three asset classes — mutual funds (1.27), smart beta ETFs (1.89), and hedge 
 fund indices (1.85). Constrained portfolios produced lower but more realistic in-sample 
 Sharpe ratios.
 
-**Out-of-sample**, performance deteriorated across the board — a well-documented 
+Out-of-sample, performance deteriorated across the board — a well-documented 
 consequence of estimation error in sample means and covariance matrices. The most 
 consistent pattern: GMV and TE-constrained portfolios generalized better out-of-sample 
 than unconstrained maximum Sharpe portfolios, because they rely less on precise mean 
 return estimates which are notoriously difficult to forecast.
 
-**Hedge fund indices** showed the most stable transfer from in-sample to out-of-sample, 
+Hedge fund indices showed the most stable transfer from in-sample to out-of-sample, 
 reflecting the lower volatility and more diversified nature of these indices relative 
 to equity-focused fund universes.
 
-**The factor-neutral portfolio** for mutual funds hit the ±200% weight bounds on 
+The factor-neutral portfolio for mutual funds hit the ±200% weight bounds on 
 multiple assets (FSELX at +200%, INPIX at -200%), exposing a structural limitation: 
 simultaneously zeroing out six correlated factor exposures across only ten funds is 
 an over-constrained problem. The optimizer finds a solution that satisfies the 
@@ -146,5 +146,3 @@ Hedge fund index data: HFR (Hedge Fund Research) — HFRI Family Indices
 Fund return data used with permission for academic and portfolio demonstration purposes  
 Project completed as part of the Master of Financial Risk Management (MFRM) program, 
 Rotman School of Management, University of Toronto
-
----
