@@ -1,15 +1,29 @@
----
-
 # Portfolio Optimization & Factor Model Analysis
 
-This project applies the Fama-French five-factor model plus momentum (six factors total) 
-to evaluate the performance of three fund universes — U.S. mutual funds, smart beta ETFs, 
-and hedge fund indices — and constructs mean-variance optimized portfolios under multiple 
-constraint regimes.
+Fund returns do not exist in a vacuum. Before allocating capital, a risk-aware 
+investor needs to know two things: where a fund's returns actually come from, 
+and how a portfolio of those funds behaves under realistic constraints. This 
+project addresses both.
 
-The analysis is structured in two parts: factor model performance evaluation (alpha and 
-risk exposure estimation), followed by portfolio optimization with in-sample and 
-out-of-sample evaluation.
+Using three distinct fund universes — U.S. mutual funds, smart beta ETFs, and 
+hedge fund indices — the analysis first decomposes each fund's returns using the 
+Fama-French five-factor model plus momentum, separating genuine alpha from 
+compensated factor exposure. It then constructs mean-variance optimized portfolios 
+under six constraint regimes and evaluates how well in-sample results hold up 
+out-of-sample.
+
+The findings carry a practical message: unconstrained optimization overfits. 
+Portfolios that look best in-sample — maximum Sharpe, long-short, no guardrails — 
+consistently underperform their constrained counterparts out-of-sample. Minimum 
+variance and tracking-error-bounded strategies transfer better precisely because 
+they make fewer assumptions about expected returns, which are notoriously difficult 
+to forecast. This trade-off between optimization sophistication and generalizability 
+is central to real-world portfolio construction.
+
+This project covers factor model regression and alpha decomposition, constrained 
+mean-variance optimization using scipy, in-sample vs. out-of-sample performance 
+evaluation, and systematic data quality analysis across three asset classes spanning 
+up to 34 years of monthly returns.
 
 ---
 
